@@ -71,16 +71,21 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 #start {
     @extend .one-skroll;
-    background: url(/images/pic1.jpg);
+    background: url(/images/bigStage1.jpg);
+    background-size: 100% Auto;
     text-align: center !important;
 }
 #next {
     @extend .one-skroll;
-    background: url(/images/pic2.jpg);
+    background: url(/images/troubadoure.jpg);
     padding-top: 10px;
+    background-size: 100% Auto;
     padding-bottom: 10px;
 }
-#about, #peops, #preview {
+#legal {
+    background-color: #000;
+}
+#about, #peops, #preview, #gallery1 {
     //background-color: #fff;
     color: $gray-lighter;
 }
