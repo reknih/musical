@@ -71,15 +71,17 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 #start {
     @extend .one-skroll;
-    background: url(/images/bigStage1.jpg);
-    background-size: 100% Auto;
+    background: url(/images/bgOpt.jpg) #a4535c;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 420px;
     text-align: center !important;
 }
 #next {
     @extend .one-skroll;
     background: url(/images/troubadoure.jpg);
     padding-top: 10px;
-    background-size: 100% Auto;
+    background-size: 100% auto;
     padding-bottom: 10px;
 }
 #legal {
@@ -117,5 +119,14 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @media screen and (max-width: 768px) {
     #about #symbols {
         display: none;
+    }
+    #start {
+        background-size: auto 100%;
+    }
+    #start h1 {
+        font-size: 55px;
+    }
+    #start h2 {
+        font-size: 30px;
     }
 }

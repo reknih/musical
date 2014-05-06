@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>musical</title>
+    <title>Eleanor - Das Musical</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -25,7 +25,7 @@
             <header class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
-                        <div class="navbar-brand">Eleanor - Das Musical</div>
+                        <div class="navbar-brand"><?=$page->title?> - <?=$page->tagline?></div>
                     </div>
                     <nav class="pull-right collapse navbar-collapse bs-navbar-collapse">
                         <ul class="nav navbar-nav">
@@ -40,125 +40,141 @@
             <div data-end="background-position:0px 150px;" data-0="background-position:0px 0px;" id="start">
                 <div class="sect">
                     <br><br>
-                    <h1>Eleanor</h1>
-                    <h2>Eine original CWS-Produktion</h2>
+                    <h1><?=$page->title?></h1>
+                    <h2><?=$page->subtitle?></h2>
                 </div>
             </div>
             <div id="about">
                 <div class="container">
                     <div class="row" id="symbols">
-                        <div class="col-sm-2 col-sm-offset-1"><img src="/images/icon_28424.svg" data-scrollReveal="enter from the bottom after 0.5s" class="img-responsive" alt="Amplifier"></div>
-                        <div class="col-sm-2 col-sm-offset-1"><img src="/images/icon_7340.svg" data-scrollReveal="enter from the bottom after 0.75s" class="img-responsive" alt="Microphone"></div>
-                        <div class="col-sm-2 col-sm-offset-1"><img src="/images/icon_19441.svg" data-scrollReveal="enter from the bottom after 1s" class="img-responsive" alt="Piano"></div>
-                        <div class="col-sm-2 col-sm-offset-1"><img src="/images/icon_19444.svg" data-scrollReveal="enter from the bottom after 1.25s" class="img-responsive" alt="Saxophone"></div>
+                        <div class="col-sm-2 col-sm-offset-1"><img src="<?=$config->urls->templates?>images/icon_28424.svg" data-scrollreveal="enter from the bottom after 0.5s" class="img-responsive" alt="Amplifier"></div>
+                        <div class="col-sm-2 col-sm-offset-1"><img src="<?=$config->urls->templates?>images/icon_7340.svg" data-scrollreveal="enter from the bottom after 0.75s" class="img-responsive" alt="Microphone"></div>
+                        <div class="col-sm-2 col-sm-offset-1"><img src="<?=$config->urls->templates?>images/icon_19441.png" data-scrollreveal="enter from the bottom after 1s" class="img-responsive" alt="Piano"></div>
+                        <div class="col-sm-2 col-sm-offset-1"><img src="<?=$config->urls->templates?>images/icon_19444.png" data-scrollreveal="enter from the bottom after 1.25s" class="img-responsive" alt="Saxophone"></div>
                     </div>
-                    <h2>Eleanor</h2>
+                    <h2><?=$page->title?></h2>
                     <div class="row">
                         <div class="col-sm-4">
-                            <h3>Die Musik</h3>
-                            <p>Die zwischen Pop und Rock angesiedelte, live präsentierte Musik enthält fetzige, tanzbare Stücke wie auch gefühlvolle Balladen, manchmal mit mittelalterlichen Elementen. Die Musik wurde ausnahmslos komponiert von den Lehrern Torsten Hampel und Christoph Hain komponiert.</p>
+                            <h3><?=$page->col1h?></h3>
+                            <?=$page->col1?>
                         </div>
                         <div class="col-sm-4">
-                            <h3>Die Handlung</h3>
-                            <p>Vorbild für die Hauptfigur ist „Eleonore von Aquitanien“, deren Leben zwischen Macht, Liebe und Kunst als sogenannte „Königin der Troubadoure“ im Mittelpunkt der Handlung steht.<br>Sie verliebt sich in einen von drei umherziehenden Troubadouren, der wiederum die Liebe der Zofe Charlotte erwidert. Außerdem vrsucht der Kanzler Sir Thomas das Schicksaal der Liebenden zu steuern.</p>
+                            <h3><?=$page->col2h?></h3>
+                            <?=$page->col2?>
                         </div>
                         <div class="col-sm-4">
-                            <h3>Das Projekt</h3>
-                            <p>Am Projekt sind ca. 90 Schülerinnen und Schüler sowie sechs Lehrer/-innen beteiligt, die alles auf die Bühne bringen, was zu einem guten Musical gehört. Das Orchester umfasst allein ca. 50 Musiker, neben der Rhythmusgruppe gibt es einen Blechbläsersatz, Streicher, einen Backgroundchor und Holzbläser. Außerdem wird eine Tanzgruppe mit ausgefeilter Choreographie auftreten!</p>
+                            <h3><?=$page->col3h?></h3>
+                            <?=$page->col3?>
                         </div>
                     </div>
                 </div>
             </div>
             <div data-end="background-position:0px -250px;" data-200="background-position:0px 0px;" id="next">
                 <div class="sect">
-                    <h2>Wir haben ein unglaublich tolles Stück</h2>
-                    <h3>Und proben ungeheuer effektiv.</h3>
+                    <h2><?=$page->herotit?></h2>
+                    <h3><?=$page->herosub?></h3>
                 </div>
             </div>
             <div id="peops">
                 <div class="container">
-                    <h2>Wer macht mit?</h2>
+                    <h2><?=$page->peopstit?></h2>
                     <div class="row">
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.5s">
-                            <img class="img-responsive img-circle" src="images/peops/fred.jpg">
-                            <h5>Frederic <small>Trompete</small></h5>
-                        </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.75s">
-                            <img class="img-responsive img-circle" src="images/peops/kevi.jpg">
-                            <h5>Kevin Bethin <small>E-Gitarre</small></h5>
-                        </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1s">
-                            <img class="img-responsive img-circle" src="images/peops/lara.jpg">
-                            <h5>Lara Sto <small>Saxophon</small></h5>
-                        </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1.25s">
-                            <img class="img-responsive img-circle" src="images/peops/leo.jpg">
-                            <h5>Leonie Krempien <small>Gesang</small></h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.5s">
-                            <img class="img-responsive img-circle" src="images/peops/luka.jpg">
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.5s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/luka.jpg">
                             <h5>Lukas Schopf <small>Kanzler</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.75s">
-                            <img class="img-responsive img-circle" src="images/peops/marv.jpg">
-                            <h5>Marvin Müller <small>E-Bass</small></h5>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.75s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/0003.jpg">
+                            <h5>Saskia Spangenberg <small>Zofe Charlotte</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1s">
-                            <img class="img-responsive img-circle" src="images/peops/phil.jpg">
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 1s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/phil.jpg">
                             <h5>Phillipp Otto <small>Troubadour</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1.25s">
-                            <img class="img-responsive img-circle" src="images/peops/janv.jpg">
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 1.25s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/janv.jpg">
                             <h5>Jan van Dick <small>Kanzler</small></h5>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.5s">
-                            <img class="img-responsive img-circle" src="images/peops/char.jpg">
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.5s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/char.jpg">
                             <h5>Charlotte Pitsch <small>K&ouml;nigin</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.75s">
-                            <img class="img-responsive img-circle" src="images/peops/davi.jpg">
-                            <h5>David Bernard <small>Troubadour</small></h5>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.75s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/davi.jpg">
+                            <h5>David Bernard <small>Bernart</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1s">
-                            <img class="img-responsive img-circle" src="images/peops/gere.jpg">
-                            <h5>Gereon Nicolay <small>Schlagzeug</small></h5>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 1s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/0004.jpg">
+                            <h5>Max Dynan <small>Troubadour</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1.25s">
-                            <img class="img-responsive img-circle" src="images/peops/janw.jpg">
-                            <h5>Jan Wagenschein <small>Troubadour</small></h5>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 1.25s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/janw.jpg">
+                            <h5>Jan Wagenschein <small>Bernart</small></h5>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.5s">
-                            <img class="img-responsive img-circle" src="images/peops/manu.jpg">
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.5s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/manu.jpg">
                             <h5>Manuel Brack <small>Troubadour</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.75s">
-                            <img class="img-responsive img-circle" src="images/peops/0001.jpg">
-                            <h5>Name Nachname <small>K&ouml;nigin</small></h5>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.75s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/0001.jpg">
+                            <h5>Katharina Fritz <small>K&ouml;nigin</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1s">
-                            <img class="img-responsive img-circle" src="images/peops/0002.jpg">
-                            <h5>Name Nachname <small>Zofe Charlotte</small></h5>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 1s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/0002.jpg">
+                            <h5>Jael S&oslash;rensen <small>Zofe Charlotte</small></h5>
                         </div>
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1.25s">
-                            <img class="img-responsive img-circle" src="images/peops/0004.jpg">
-                            <h5>Name Nachname <small>Troubadour</small></h5>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 1.25s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/gere.jpg">
+                            <h5>Gereon Nicolay <small>Schlagzeug</small></h5>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.5s">
-                            <img class="img-responsive img-circle" src="images/peops/0003.jpg">
-                            <h5>Name Nachname <small>Zofe Charlotte</small></h5>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.5s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/marv.jpg">
+                            <h5>Marvin Müller <small>E-Bass</small></h5>
                         </div>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.75s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/kevi.jpg">
+                            <h5>Kevin Bethin <small>E-Gitarre</small></h5>
+                        </div>
+                        <!--<div class="col-sm-3" data-scrollReveal="enter from the bottom after 1s">
+                            <img class="img-responsive img-circle" src="images/peops/0006.jpg">
+                            <h5>Name Nachname <small>Chor</small></h5>
+                        </div>
+                        <div class="col-sm-3" data-scrollReveal="enter from the bottom after 1.25s">
+                            <img class="img-responsive img-circle" src="images/peops/0007.jpg">
+                            <h5>Name Nachname <small>Trompete</small></h5>
+                        </div>-->
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 1s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/lara.jpg">
+                            <h5>Lara Sto <small>Saxophon</small></h5>
+                        </div>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 1.25s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/leo.jpg">
+                            <h5>Leonie Krempien <small>Chor</small></h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.5s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/fred.jpg">
+                            <h5>Frederic D&ouml;tig <small>Trompete</small></h5>
+                        </div>
+                        <div class="col-sm-3" data-scrollreveal="enter from the bottom after 0.75s">
+                            <img class="img-responsive img-circle" src="<?=$config->urls->templates?>images/peops/mart.jpg">
+                            <h5>Martin Haug <small>Saxophon und Website</small></h5>
+                        </div>
+                        <!--<div class="col-sm-3" data-scrollReveal="enter from the bottom after 0.75s">
+                            <img class="img-responsive img-circle" src="images/peops/0005.jpg">
+                            <h5>Name Nachname <small>Violine</small></h5>
+                        </div>-->
                     </div>
                 </div>
             </div>
-            <div data-end="background-color:rgb(255,255,255);" data-100="background-color:rgb(0,0,102);" id="preview">
+            <!--<div data-end="background-color:rgb(255,255,255);" data-100="background-color:rgb(0,0,102);" id="preview">
                 <div class="container">
                     <h2>Hörproben</h2>
                     <h3>Überzeuge dich selbst.</h3>
@@ -175,7 +191,91 @@
                         </div>
                     </div>
                 </div>
+            </div>-->
+            <div data-end="background-color:rgb(13,18,34);" data-150="background-color:rgb(191,233,190);" id="footer">
+                <div class="container">
+                    <h2><?=$page->schedtit?></h2>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4><?=$page->schedcol1h?></h4>
+                            <?=$page->schedcol1?>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4><?=$page->schedcol1h?></h4>
+                            <?=$page->schedcol2?>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4><?=$page->schedcol1h?></h4>
+                            <?=$page->schedcol3?>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div id="gallery1">
+                <div class="container">
+                    <h2><?=$page->gallerytit?></h2>
+                    <?=$page->gallery?>
+                </div>
+            </div>
+            <div id="gallery">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="<?=$config->urls->templates?>images/P1050151.jpg" alt="Kanzler bedroht">
+                      </div>
+                      <div class="item">
+                          <img src="<?=$config->urls->templates?>images/P1050191.jpg" alt="König und Könign">
+                      </div>
+                      <div class="item">
+                          <img src="<?=$config->urls->templates?>images/P1050211.jpg" alt="Der Kanzler berät die Königin">
+                      </div>
+                      <div class="item">
+                          <img src="<?=$config->urls->templates?>images/P1050246.jpg" alt="Die Troubadoure treten auf">
+                      </div>
+                      <div class="item">
+                          <img src="<?=$config->urls->templates?>images/P1050259.jpg" alt="Troubadoure legen sich ins Zeug">
+                      </div>
+                      <div class="item">
+                          <img src="<?=$config->urls->templates?>images/P1050317.jpg" alt="Troubadoure nachdenklich">
+                      </div>
+                  </div>
+            </div>
+    </div>
+    <div id="legal">
+        <div class="container">
+            <h4><?=$page->sidebartit?></h4>
+            <img src="<?=$config->urls->templates?>images/logocws.png" alt="Christinan-Wirth-Schule Logo" class="pull-right">
+            <?=$page->sidebar?>
+        </div>
+    </div>
+            <!--<div data-end="background-color:rgb(255,255,255);" data-100="background-color:rgb(0,0,102);" id="preview">
+                <div class="container">
+                    <h2>Hörproben</h2>
+                    <h3>Überzeuge dich selbst.</h3>
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-1">
+                            <audio src="#" data-scrollReveal="enter from the left after 0.25s" controls="controls" preload="none">
+                                <a href="#">Hier klicken</a>
+                            </audio>
+                        </div>
+                        <div class="col-sm-5">
+                            <audio src="#" data-scrollReveal="enter from the right after 0.25s" controls="controls" preload="none">
+                                <a href="#">Hier klicken</a>
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
             <div data-end="background-color:rgb(13,18,34);" data-150="background-color:rgb(191,233,190);" id="footer">
                 <div class="container">
                     <h2>Schau es dir an!</h2>
@@ -207,7 +307,7 @@
             <div id="gallery1">
                 <div class="container">
                     <h2>Willst du mehr sehen?</h2>
-                    <p>Wir haben eine Gallerie für dich zusammengestellt.</p>
+                    <p>Wir haben eine Galerie für dich zusammengestellt.</p>
                 </div>
             </div>
             <div id="gallery">
@@ -248,7 +348,7 @@
         <div class="container">
             <h4>Danke für's Vorbeischauen!</h4>
             <img src="images/logocws.png" alt="Christinan-Wirth-Schule Logo" class="pull-right">
-            <p>Eine Poduktion der <a href="">Christian-Wirth-Schule</a>.<br>Wir haben ein <a href="">Impressum!</a></p>
+            <p>Eine Poduktion der <a href="http://cws-usingen.de">Christian-Wirth-Schule</a>.<br>Wir haben ein <a href="">Impressum!</a></p>
         </div>
     </div>
     <!-- build:js scripts/vendor.js -->
@@ -274,10 +374,11 @@
     <script src="bower_components/sass-bootstrap/js/transition.js"></script>
     <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
     <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/effects.js -->
     <script src="scripts/scrollReveal.js"></script>
     <script src="scripts/skrollr.js"></script>
     <!-- endbuild -->
-
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
